@@ -9,6 +9,7 @@ source $(conda info --base)/etc/profile.d/conda.sh
 conda create -y -n $CONDA_ENV_NAME python=3.7.13
 conda activate $CONDA_ENV_NAME
 conda install -y  ipykernel
+pip install --upgrade jupyter_client
 python -m ipykernel install --user --name VideoMessage --display-name "Python 3 (VideoMessage)"
 sh install_git-lfs.sh
 sh install_ffmpeg.sh
