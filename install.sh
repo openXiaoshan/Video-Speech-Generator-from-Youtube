@@ -12,7 +12,8 @@ conda install -y  ipykernel
 pip install --upgrade jupyter_client
 python -m ipykernel install --user --name VideoMessage --display-name "Python 3 (VideoMessage)"
 sh install_git-lfs.sh
-sh install_ffmpeg.sh
+# sh install_ffmpeg.sh
+source activate python3 && conda activate VideoMessage && conda install ffmpeg
 
 
 
